@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Український бренд жіночого трикотажного одягу, не лише зручного та базового, але й елегантного та лаконічного, який підкреслює природню красу та індивідуальність кожної дівчини та жінки, відображає позачасовий стиль та сталі цінності."
+    />
+    <title>J.D.Wool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/media.css" />
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header class="header">
+      <div class="container header--container">
+        <!-- Main sections -->
+        <div class="header--container-section">
+          <nav class="nav">
+            <ul class="list header--container-section__list">
+              <li class="header--container-section__list__li">
+                <a
+                  href="./catalog.html"
+                  class="link header--container-section__list__li__link"
+                >
+                  Каталог
+                </a>
+              </li>
+              <li class="header--container-section__list__li">
+                <a
+                  href=""
+                  class="link header--container-section__list__li__link"
+                >
+                  Колекції
+                </a>
+              </li>
+              <li class="header--container-section__list__li">
+                <a
+                  href=""
+                  class="link header--container-section__list__li__link"
+                >
+                  Покупцям
+                </a>
+              </li>
+              <li class="header--container-section__list__li">
+                <a
+                  href=""
+                  class="link header--container-section__list__li__link"
+                >
+                  Про нас
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Logo -->
+        <div class="header--container__logo">
+          <a href="./index.html" class="link header--container__logo__link">
+            <svg class="icon header--container__logo__link__icon">
+              <use href="../images/icons.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header--container-wrapper">
+          <!-- Language changer -->
+          <div class="header--container__lang">
+            <a href="./index.html" class="link header--container__lang__link">
+              UA
+            </a>
+            <p class="par header-lang--par">/</p>
+            <a href="./index.html" class="link header--container__lang__link">
+              ENG
+            </a>
+          </div>
+          <!-- Currency -->
+          <div class="header--container__cur">
+            <p class="par header--container__cur__par">UAH</p>
+            <svg
+              class="icon header--container__cur__icon"
+              width="24"
+              height="24"
+            >
+              <use href="../images/icons.svg#arrow"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- Client information icons -->
+        <div class="header--container-icons">
+          <nav class="nav">
+            <ul class="list header--container-icons__list">
+              <li class="header--container-icons__list__li">
+                <svg
+                  class="icon header--container-icons__list__li__icon"
+                  width="25"
+                  height="25"
+                  fill="none"
+                  stroke="#000"
+                >
+                  <use href="../images/icons.svg#search"></use>
+                </svg>
+              </li>
+              <li class="header--container-icons__list__li">
+                <svg
+                  class="icon header--container-icons__list__li__icon"
+                  width="25"
+                  height="25"
+                >
+                  <use href="../images/icons.svg#account"></use>
+                </svg>
+              </li>
+              <li class="header--container-icons__list__li">
+                <svg
+                  class="icon header--container-icons__list__li__icon"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="#000"
+                >
+                  <use href="../images/icons.svg#like"></use>
+                </svg>
+              </li>
+              <li class="header--container-icons__list__li">
+                <svg
+                  class="icon header--container-icons__list__li__icon"
+                  width="25"
+                  height="25"
+                >
+                  <use href="../images/icons.svg#purchases"></use>
+                </svg>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="button header--container-burger" id="burger">
+          <span class="header--container-burger__span"></span>
+          <span class="header--container-burger__span"></span>
+          <span class="header--container-burger__span"></span>
+        </button>
+      </div>
+      <div class="popup-menu" id="popupMenu">
+        <div class="popup-menu--container">
+          <ul class="list popup-menu--container__list__nav">
+            <li class="popup-menu--container__list__li">
+              <a
+                href="./catalog.html"
+                class="link header--container-section__list__li__link"
+              >
+                Каталог
+              </a>
+            </li>
+            <li class="popup-menu--container__list__li">
+              <a href="" class="link header--container-section__list__li__link">
+                Колекції
+              </a>
+            </li>
+            <li class="popup-menu--container__list__li">
+              <a href="" class="link header--container-section__list__li__link">
+                Покупцям
+              </a>
+            </li>
+            <li class="popup-menu--container__list__li">
+              <a href="" class="link header--container-section__list__li__link">
+                Про нас
+              </a>
+            </li>
+          </ul>
+
+          <ul class="list popup-menu--container__list__icons">
+            <li class="header--container-icons__list__li">
+              <svg
+                class="icon header--container-icons__list__li__icon"
+                width="25"
+                height="25"
+                fill="none"
+                stroke="#000"
+              >
+                <use href="../images/icons.svg#search"></use>
+              </svg>
+            </li>
+            <li class="header--container-icons__list__li">
+              <svg
+                class="icon header--container-icons__list__li__icon"
+                width="25"
+                height="25"
+              >
+                <use href="../images/icons.svg#account"></use>
+              </svg>
+            </li>
+            <li class="header--container-icons__list__li">
+              <svg
+                class="icon header--container-icons__list__li__icon"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#000"
+              >
+                <use href="../images/icons.svg#like"></use>
+              </svg>
+            </li>
+            <li class="header--container-icons__list__li">
+              <svg
+                class="icon header--container-icons__list__li__icon"
+                width="25"
+                height="25"
+              >
+                <use href="../images/icons.svg#purchases"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Main section -->
+    <main>
+      <!-- Hero section -->
+      <section class="hero">
+        <!-- Slider -->
+        <div class="swiper mainSwiper hero--container__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero--container__slider__swiper">
+              <!-- Catalog link button -->
+              <a href="./catalog.html" class="link hero--container__link">
+                Каталог
+                <svg
+                  class="icon hero--container__link__icon"
+                  width="60"
+                  height="10"
+                >
+                  <use href="../images/icons.svg#catalog"></use>
+                </svg>
+              </a>
+              <img
+                class="img hero--container__slider__swiper__img"
+                src="../images/hero/hero-bg.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide hero--container__slider__swiper">
+              <!-- Catalog link button -->
+              <a href="./catalog.html" class="link hero--container__link">
+                Каталог
+                <svg
+                  class="icon hero--container__link__icon"
+                  width="60"
+                  height="10"
+                >
+                  <use href="../images/icons.svg#catalog"></use>
+                </svg>
+              </a>
+              <img
+                class="img hero--container__slider__swiper__img"
+                src="../images/hero/hero-bg.jpg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide hero--container__slider__swiper">
+              <!-- Catalog link button -->
+              <a href="./catalog.html" class="link hero--container__link">
+                Каталог
+                <svg
+                  class="icon hero--container__link__icon"
+                  width="60"
+                  height="10"
+                >
+                  <use href="../images/icons.svg#catalog"></use>
+                </svg>
+              </a>
+              <img
+                class="img hero--container__slider__swiper__img"
+                src="../images/hero/hero-bg.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="container footer--container">
+        <div class="footer--container--sections">
+          <div class="footer--container--sections--logos">
+            <!-- Logo -->
+            <a
+              href="./index.html"
+              class="link footer--container--sections--logos__link"
+            >
+              <svg
+                class="icon footer--container--sections--logos__link__icon"
+                width="127"
+                height="28"
+              >
+                <use href="../images/icons.svg#logo"></use>
+              </svg>
+            </a>
+            <!-- Payment methods -->
+            <ul class="list footer--container--sections--logos__list">
+              <li class="footer--container--sections--logos__list__li">
+                <img
+                  class="footer--container--sections--logos__list__li__img__visa"
+                  src="../images/footer/visa.png"
+                  alt="Buy with Visa"
+                  width="108"
+                  height="35"
+                />
+              </li>
+              <li class="footer--container--sections--logos__list__li">
+                <img
+                  class="footer--container--sections--logos__list__li__img__mc"
+                  src="../images/footer/mastercard.png"
+                  alt="Buy with Mastercard"
+                  width="45"
+                  height="35"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- Social media links -->
+          <div class="footer--container--section">
+            <h6 class="title footer--container--section__title">
+              Ми в соціальних мережах
+            </h6>
+            <ul class="list footer--container--section__list">
+              <li class="footer--container--section__list__li">
+                <a
+                  href="https://www.instagram.com/j.d.wool/"
+                  class="link footer--container--section__list__li__link"
+                  target="_blank"
+                  rel="noopener norefferer"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Telegram
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Information for client -->
+          <div class="footer--container--section">
+            <h6 class="title footer--container--section__title">
+              Інформація для клієнта
+            </h6>
+            <ul class="list footer--container--section__list">
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Про нас
+                </a>
+              </li>
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Контакти
+                </a>
+              </li>
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Доставка і оплата
+                </a>
+              </li>
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Обмін і повернення
+                </a>
+              </li>
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Договір оферти
+                </a>
+              </li>
+              <li class="footer--container--section__list__li">
+                <a
+                  href=""
+                  class="link footer--container--section__list__li__link"
+                >
+                  Політика конфіденційності
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Develop by MKey Media -->
+        <div class="footer--container--copyright">
+          <a
+            href="https://mkeymedia.com/"
+            target="_blank"
+            class="link footer--container--copyright__link copyright--text"
+            rel="noopener norefferer"
+          >
+            Розроблено компанією
+            <img
+              class="footer--container--copyright__link__img"
+              src="../images/footer/mkey-logo.png"
+              alt="mKey logo"
+              width="53"
+              height="17"
+            />
+          </a>
+          <p class="par footer--container--copyright__par copyright--text">
+            &copy;2023 Всі права захищені. Інтернет магазин J.D.Wool.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

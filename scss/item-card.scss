@@ -1,0 +1,233 @@
+$item-card_color: rgba(175, 175, 175, 1);
+$primary_text: rgba(0, 0, 0, 1);
+$background_color: rgba(255, 255, 255, 1);
+
+.item-card {
+  padding-top: 150px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 102px;
+
+
+  &--container__photo {
+    
+
+   width: 50%;
+   left: 0;
+
+  
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .itemCardSwiper2 {
+    padding-bottom: 20px;
+  }
+
+   }
+
+  &--container {
+
+
+    &__title {
+      font-size: 36px;
+      line-height: 1.219;
+      font-weight: 300;
+      padding-bottom: 20px;
+    }
+
+    &__par {
+      line-height: 1.3;
+      color: $item-card_color;
+
+      &__span {
+        color: $primary_text;
+      }
+
+      .item-price {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.219;
+      }
+    }
+
+    .art-pad {
+      padding-bottom: 59px;
+    }
+
+    .price-pad {
+      padding-bottom: 70px;
+    }
+
+    &__parameters {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 60px;
+
+      &__list {
+        display: flex;
+        gap: 30px;
+
+        &__li-size {
+          font-size: 20px;
+          line-height: 1.3;
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+          &:hover {
+            font-weight: 500;
+          }
+        }
+
+        &__li-color {
+          border-radius: 50%;
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+          &:hover {
+            box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.25);
+          }
+        }
+
+        &__li-color__circle_black {
+          width: 25px;
+          height: 25px;
+          background-color: rgba(0, 0, 0, 1);
+          border-radius: 50%;
+        }
+
+        &__li-color__circle_white {
+          width: 25px;
+          height: 25px;
+          border: 1px solid rgba(138, 138, 138, 1);
+          background-color: rgba(255, 255, 255, 1);
+          border-radius: 50%;
+        }
+
+        &__li-color__circle_skin {
+          width: 25px;
+          height: 25px;
+          background-color: rgba(240, 230, 218, 1);
+          border-radius: 50%;
+        }
+
+        &__li-color__circle_grey {
+          width: 25px;
+          height: 25px;
+          background-color: rgba(138, 138, 138, 1);
+          border-radius: 50%;
+        }
+      }
+
+      .item-color {
+        gap: 35px;
+      }
+
+      &__each {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 34px;
+      padding-bottom: 70px;
+
+      &__button {
+        width: 285px;
+        height: 49px;
+        text-transform: uppercase;
+        justify-content: center;
+        border: none;
+        font-weight: 400;
+        line-height: 1.3;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .black-but {
+        background-color: $primary_text;
+        color: $background_color;
+
+        &:hover {
+          background-color: $background_color;
+          color: $primary_text;
+        }
+      }
+
+      .white-but {
+        background-color: $background_color;
+        color: $primary_text;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &__icon:hover {
+          fill: #000;
+        }
+      }
+    }
+
+    &__info {
+      padding-bottom: 32px;
+      display: flex;
+      justify-content: space-between;
+      
+        &__button {
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          border: none;
+          background-color: inherit;
+          cursor: pointer;
+
+          &:hover {
+            color: rgba(71, 71, 71, 1);
+          }
+        }
+
+        
+
+          &__button.active {
+            color: rgba(71, 71, 71, 1);
+            text-decoration: underline;
+          }
+    }
+
+    &__size-chart {
+      &__table {
+        &__font {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 1.3;
+        }
+
+        .th-weight {
+          font-weight: 400;
+          padding: 0 50px 25px 0;
+        }
+
+        .indent {
+          padding-left: 105px;
+        }
+
+        .sizes-bottom {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+//"You would like it" and "You previously seen" sections
+.useful {
+  margin-top: 85px;
+
+  .catalog--container__item-card {
+    &__title {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 1.215;
+      padding-bottom: 25px;
+    }
+  }
+}
