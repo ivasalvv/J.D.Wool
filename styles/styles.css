@@ -518,7 +518,7 @@ button {
   padding-top: 85px;
   padding-bottom: 46px;
   border-top: 1px solid rgb(201, 201, 201);
-  background-image: url(../images/footer/footer-bg.png);
+  background-image: url(./images/footer/footer-bg.png);
   background-position: bottom center;
   background-repeat: no-repeat;
 }
